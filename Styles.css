@@ -1,0 +1,173 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #333;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #111;
+}
+
+/* Service Section */
+#services .service {
+    margin: 20px 0;
+}
+
+/* Contact Form */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form input[type="submit"] {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Adjust layout for smaller screens */
+@media screen and (max-width: 768px) {
+    nav ul li {
+        float: none;
+        width: 100%;
+    }
+}
+/* Business Owners Section */
+#owners {
+    background-color: #f4f4f4;
+    padding: 60px 20px;
+}
+
+.owner-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.owner {
+    text-align: center;
+    margin: 20px;
+    max-width: 250px;
+}
+
+.owner img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.owner h3 {
+    margin-bottom: 10px;
+}
+
+.owner p {
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.social-media a {
+    display: inline-block;
+    margin: 5px 10px;
+    color: #333;
+    text-decoration: none;
+    border: 1px solid #333;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.social-media a:hover {
+    background-color: #333;
+    color: white;
+}
+
+/* Adjust layout for smaller screens */
+@media screen and (max-width: 768px) {
+    .owner-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .owner {
+        margin: 20px 0;
+    }
+}
+/* Slide In */
+.slide-in {
+  transform: translateX(-100%);
+  transition: transform 1s ease-in-out;
+}
+
+.slide-in.show {
+  transform: translateX(0);
+}
+
+/* Slide Out */
+.slide-out {
+  transform: translateX(0);
+  transition: transform 1s ease-in-out;
+}
+
+.slide-out.hide {
+  transform: translateX(100%);
+}

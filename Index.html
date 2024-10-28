@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Business Name</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sliding Photos Section -->
+    <section id="home">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="photo1.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="photo2.jpg" style="width:100%">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service">
+            <h3>Web Development</h3>
+            <p>We create responsive and functional websites.</p>
+        </div>
+        <div class="service">
+            <h3>Graphic Design</h3>
+            <p>We design logos, brochures, and more.</p>
+        </div>
+        <div class="service">
+            <h3>Mobile App Development</h3>
+            <p>We develop mobile apps for iOS and Android.</p>
+        </div>
+        <div class="service">
+            <h3>Data Analysis</h3>
+            <p>We analyze your data to help you make better decisions.</p>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are a team of professionals dedicated to delivering high-quality services.</p>
+    </section>
+<!-- Business Owners Section -->
+<section id="owners">
+    <h2>Meet the Owners</h2>
+    <div class="owner-container">
+        <div class="owner">
+            <img src="owner1.jpg" alt="Owner 1">
+            <h3>Owner 1</h3>
+            <p>Founder and CEO</p>
+            <div class="social-media">
+                <a href="https://facebook.com/owner1" target="_blank">Facebook</a>
+                <a href="https://twitter.com/owner1" target="_blank">Twitter</a>
+                <a href="https://linkedin.com/in/owner1" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+        <div class="owner">
+            <img src="owner2.jpg" alt="Owner 2">
+            <h3>Owner 2</h3>
+            <p>Chief Technology Officer</p>
+            <div class="social-media">
+                <a href="https://facebook.com/owner2" target="_blank">Facebook</a>
+                <a href="https://twitter.com/owner2" target="_blank">Twitter</a>
+                <a href="https://linkedin.com/in/owner2" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+        <div class="owner">
+            <img src="owner3.jpg" alt="Owner 3">
+            <h3>Owner 3</h3>
+            <p>Chief Creative Officer</p>
+            <div class="social-media">
+                <a href="https://facebook.com/owner3" target="_blank">Facebook</a>
+                <a href="https://twitter.com/owner3" target="_blank">Twitter</a>
+                <a href="https://linkedin.com/in/owner3" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Contact Us Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="submit_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
